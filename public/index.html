@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media Parser</title>
+    <meta name="description" content="A real-time parser for Threads, Twitter, and Facebook.">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="dashboard">
+        <header>
+            <h1>Social Insights <span>Parser</span></h1>
+            <p>Real-time data from across the web.</p>
+        </header>
+        
+        <section class="search-container">
+            <div class="search-box">
+                <input type="text" id="topic-input" placeholder="Enter a topic (e.g., crypto, marketing)..." value="marketing">
+                <button id="search-btn">Analyze</button>
+            </div>
+        </section>
+
+        <section class="results-container">
+            <div id="loader" class="loader hidden">
+                <div class="spinner"></div>
+                <p>Scraping data streams...</p>
+            </div>
+            
+            <div id="error-message" class="error-message hidden"></div>
+            
+            <div id="results-grid" class="results-grid">
+                <!-- Data cards will be injected here -->
+            </div>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
